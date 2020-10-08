@@ -6,8 +6,8 @@
 # Github: https://github.com/chiragsachdev/                                    #
 #==============================================================================#
 
-import chirags_helpers.file_handling as handler
-import chirags_helpers.text_processing as texter
+from chirags_helpers import file_handling as handler
+from chirags_helpers import text_processing as texter
 from nltk.corpus import words
 
 def check_palindrome(s):
