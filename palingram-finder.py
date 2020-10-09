@@ -6,8 +6,8 @@
 # Github: https://github.com/chiragsachdev/                                    #
 #==============================================================================#
 
-from chirags_helpers import file_handling as handler
-from chirags_helpers import text_processing as texter
+from utils import file_handling as handler
+from utils import text_processing as texter
 from nltk.corpus import words
 
 def check_palindrome(s):
@@ -65,7 +65,7 @@ def main():
 		text = words.words()
 	
 	palingrams = find_palingrams(text)
-	print(palingrams)
+	print('Palingrams: ', *palingrams, sep='\n')
 	exit(0)
 
 if __name__=='__main__':
